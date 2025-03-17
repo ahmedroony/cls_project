@@ -1,0 +1,451 @@
+@import url(./untilty.css);
+
+body{
+
+    margin: 0px;
+    background-color:c;
+    overflow-x: hidden;
+
+}
+.nav-top{
+    width: 100%;
+    height: 60px;
+background-color:rgb(248, 248, 245);
+position: fixed;
+top: 0px;
+z-index: 1000;
+box-shadow: 10px 5px 5px rgb(245, 241, 241);
+}
+.menu{
+    width: 70%;
+text-align: center;
+margin-top: 10px;
+margin-left: 190px;
+}
+.menu ul li{
+position: relative;
+line-height: -5px;
+display: inline-block;
+margin: 10px;
+}
+.menu ul li ul{
+    display: none;
+    padding: 10px;
+}
+.menu ul li:hover ul{
+    display: block;
+    background-color: white;
+    border-radius: 5px;
+}
+.menu ul li h3:hover{
+color: red;
+}
+
+.nav-top .icons{
+    position: var(--main-position);
+    right: 20px;
+    top: 30%;
+    margin-right:10px;
+    letter-spacing: 2px;
+    color: black;
+    text-decoration: none;
+}
+.Icons a{
+    margin-left: 15px;
+    font-size: 18px;
+    color: var(--color);
+    text-decoration: none;
+}
+.nav-top .thelogo{
+    position: var(--main-position);
+    top: 15%;
+    left: 3%;
+}
+.nav-top .login{
+line-height: 1px;
+    width: 300px;
+    height: 50px;
+    position: relative;
+    font-size: 15px;
+    font-weight: 600;
+    float: right;
+    position: var(--main-position);
+    right: 0px;
+    bottom: 35px;
+    top:37px;
+    display: inline;
+}
+.nav-top .login a{
+    color: var(--color);
+    margin-left: 20px;
+    text-decoration: none;
+}
+menu{
+    position: relative;
+margin: auto;    
+width: 95em;
+height: 100em;
+    background-color:#ffff;
+}
+.me-nu h1{
+    width: 663.06px;
+    height: auto;
+display: block;
+font-weight: bolder;
+font-size: 80px;
+margin-bottom: 10px;
+padding: 10px;
+position: relative;
+top: 50px;
+}
+.star img{
+    width: 94px;
+    height: 94px;
+    position: var(--main-position);
+    bottom: 10px;
+    right: 30%;
+    top: 120px;
+    margin-right: 350px;
+    margin-top: 70px;
+}
+.me-nu h2{
+font-size: 36.55;
+font-weight: bolder;
+margin-top: -35px;
+}
+.me-nu .prices {
+    h6{
+position: relative;
+bottom: 250px;
+top: 40px;
+left: 50px;
+    }
+    
+ h2{
+    position: relative;
+    color: rgb(0, 0, 0);
+top: 90px;
+left:40px;
+bottom: 500px;
+
+}
+
+}
+.me-nu .the-buttons{
+    position: relative;
+    top: 150px;
+    left: 35px;
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    transition: all 3s;
+
+}
+.me-nu .the-buttons {
+    button{
+        border-radius: 10px;
+        width: 150px;
+        height: 45px;
+        background-color:var(--color);
+        color: white;
+    }
+    .button2{
+background-color: white;
+color: var(--color);
+    }
+}
+.me-nu .the-buttons button{
+cursor: pointer;
+}
+.me-nu .right-pinkphoto{
+float: right;
+margin-right: 20%;
+margin-bottom: 100%;
+
+}
+.right-2photo{
+    position: var(--main-position);
+    right: 0px;
+    top: 50%;
+}
+.me-nu .star-2{
+position: var(--main-position);
+right: 10%;
+top: 100px;
+bottom: 15px;
+margin-right: 50px;
+}
+.me-nu{
+.support{
+img{
+    z-index: 500;
+    width: 50px;
+    position: fixed;
+    bottom: 0px;
+    margin-left: 60px; 
+    margin-bottom: 0px;
+    display: inline;
+}
+}
+.cart{
+
+    img{
+        z-index: 500;
+        width: 50px;
+        position: fixed;
+        bottom: 0px;
+        margin-left: 1px; 
+    margin-bottom: 0px;
+    display: inline;
+    }
+    }
+}
+.me-nu .cut-photo{
+position: var(--main-position);
+right: 10%;
+bottom: 40%;
+left: 80%;
+margin-right: 50%;
+margin-left: -30px;
+}
+.me-nu .black-bottom{
+    position: var(--main-position);
+    right: 10%;
+    bottom: 43%;
+    left: 80%;
+    margin-right: 50%;
+    margin-left: -30px;
+
+}
+hr{
+    position: relative;
+width: 100%;
+margin-top: -10px;
+}
+.me-nu .img-letter{
+    position: relative;
+    width: 398px;
+    height: 146;
+    top: 20%;
+    left: 2%;
+}
+.me-nu .img-letter .img-1{
+    width: 75.06px;
+    height: 75.18px;
+}
+.me-nu .img-letter h6{
+position: relative;
+left: 25%;
+bottom:25%;
+top: -85px;
+}
+.me-nu .img-letter h4{
+    position: relative;
+left: 25%;
+bottom:25%;
+top: -65px;
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+}
+.me-nu .line-like-photo{
+    width: 172px;
+    height: 206px;
+    position: relative;
+    left: 30%;
+    top: 25%;
+    right: 25%;
+}
+.collge-left{
+    width: 1000px;
+    height: 510px;
+    background-color: #FEEB9D;
+    margin: 400px 550px 0px auto;
+position: relative;
+}
+.collge-left {
+    img{
+        margin-left: 20px;
+        position: var(--main-position);
+        top: 12%;
+    }
+    button{
+        position: relative;
+        top: 55%;
+        left: 5%;
+        margin: auto auto auto 5px;
+        border-radius: 15px;
+        height: 34.39px;
+        width: 85.39px;
+        background-color: white;
+        cursor: pointer;
+        
+    }
+}
+.collge-left .buttons-0 button:nth-child(1){
+position: var(--main-position);
+top: 50%;
+}
+.collge-left .buttons-0 button:nth-child(2){
+position: var(--main-position);
+top: 50%;
+left: 25%;
+}
+.collge-left .buttons-0 button:nth-child(3){
+position: var(--main-position);
+top: 50%;
+left: 45%;
+}
+.collge-left .buttons-0 button:nth-child(4){
+position: var(--main-position);
+top: 50%;
+left: 60%;
+}
+
+
+ .me-nu .collge-left .img-2{
+
+position: var(--main-position);
+left: 20%;
+    }
+ .me-nu .collge-left .img-3{
+
+position: var(--main-position);
+left: 40%;
+    }
+ .me-nu .collge-left .img-4{
+
+position: var;
+left: 55%;
+bottom: 25%;
+top: 15%;
+    }
+ .me-nu .collge-left .black-border{
+position: var;
+left: 92%;
+bottom: -20%;
+top: 30%;
+}
+
+.collge-right{
+    position: relative;
+    width: 1000px;
+    height: 495px;
+    background-color: #000000;
+    left: 66%;
+    bottom: 31%;
+    margin-bottom: 50px;
+}
+.collge-right .border-white{
+position: var(--main-position);
+top: 28%;
+left: 0%;
+bottom: 25%;
+position: var(--main-position);
+}
+.collge-right p{
+    color: rgb(255, 255, 255);
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    position: relative;
+    font-size: xx-large;
+    left: 20%;
+    top: 35%;
+}
+.collge-right h6{
+color: lightgray;
+font-family: "DM Sans", sans-serif;
+font-optical-sizing: auto;
+font-weight: weight;
+font-style: normal;
+position: relative;
+left: 21%;
+ top: 37%;
+}
+.new-info{
+    position: relative;
+    width: 100%;
+    height: 728.2px;
+    background-color: #ffff;
+    margin: 0px auto 0px auto;
+}
+.new-info .img-5{
+    width: 630px;
+    height: 528.2px;
+    position: var(--main-position);
+    left: 10%;
+    top: 10%;
+}
+   .new-info h4{
+    position: var(--main-position);
+    left: 53%;
+    top: 15%;
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    font-size: xx-large;
+   }
+   .new-info img:last-child{
+    position: var(--main-position);
+    left: 85%;
+    top: 15%;
+   }
+.new-info h5{
+    font-family: "DM Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+  position: var(--main-position);
+  left: 53%;
+  top: 30%;
+  right: 10%;
+}
+.new-info .img--6{
+    position: var(--main-position);
+    left: 53%;
+    top: 46%;
+    right: 65%;
+}
+.new-info .img--7{
+    position: var(--main-position);
+    left: 75%;
+    top: 46%;
+    right: 65%;
+}
+.new-info marquee{
+    
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+margin-left: 10px;
+margin-bottom: auto;
+letter-spacing: 10px;
+}
+.new-info marquee hr{
+    width: 100%;
+color: black;
+margin-top: 10px;
+background-color: black;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
