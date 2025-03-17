@@ -1,0 +1,87 @@
+@import url(./untilty.css);
+
+/* Header */
+header{
+    background-color: red;
+    width: 100%;
+    min-width: 1300px;
+    height: 70px;
+    & nav{
+        display: flex;
+        width: 90%;
+        height: 100%;
+        margin: auto;
+        background-color: aqua;
+    }
+}
+/* ---------- */
+
+/* Nav */
+.nav-site-logo{
+    background-color: #fddf01;
+    width: 200px;
+}
+.nav-box{
+    display: flex;
+    width: 100%;
+    background-color: black;
+}
+/* >>> */
+.nav-box__left-side{
+    width: 70%;
+    height: 100%;
+    background-color: blue;
+}
+.nav-box__right-side{
+    width: 30%;
+    height: 100%;
+    background-color: blueviolet;
+}
+/* >>> */
+.nav-list{
+    line-height: 70px;
+    height: 100%;
+    background-color: beige;
+    & li{
+        position: relative;
+        padding: 0px 10px;
+        background-color: bisque;
+        display: inline-block;
+        &:hover .nav-list__item1-sub-menu{
+            display: block;
+        }
+    }
+}
+
+.nav-list__item1-sub-menu{
+    display: none;
+    position: absolute;
+    left: -100px;
+    background-color: green;
+    height: 300px;
+    width: 300px;
+    & > div {
+        margin: 10px;
+        width: 50px;
+        height: 50px;
+        background-color: red;
+        display: inline-block;
+    }
+}
+/* ---------- */
+
+/* Main > sections */
+.section1 , 
+.section2 , 
+.section3 {
+    height: 500px; 
+    width : 100%;
+    border-bottom: 1px solid black;
+}
+/* ---------- */
+
+/* footer */
+footer{
+    background-color: blue;
+}
+/* ---------- */
