@@ -16,30 +16,90 @@ top: 0px;
 z-index: 1000;
 box-shadow: 10px 5px 5px rgb(245, 241, 241);
 }
-.menu{
+.menu {
     width: 70%;
-text-align: center;
-margin-top: 10px;
-margin-left: 190px;
+    text-align: center;
+    margin-top: 10px;
+    margin-left: 190px;
 }
-.menu ul li{
-position: relative;
-line-height: -5px;
-display: inline-block;
-margin: 10px;
+
+.menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
 }
-.menu ul li ul{
-    display: none;
-    padding: 10px;
+
+.menu ul li {
+    position: relative;
+    display: inline-block;
+    margin: 10px;
 }
-.menu ul li:hover ul{
+
+.menu ul li a {
+    text-decoration: none;
+    padding: 10px 15px;
     display: block;
+    color: #333;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out;
+}
+
+.menu ul li a:hover {
+    color: #e63946;
+}
+
+.menu ul li ul {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
     background-color: white;
-    border-radius: 5px;
+    border-radius: 8px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.15);
+    padding: 12px 0;
+    min-width: 200px;
+    z-index: 100;
+    
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+    transform: translateY(10px);
 }
-.menu ul li h3:hover{
-color: red;
+
+.menu ul li:hover ul,
+.menu ul li ul:hover {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+    transform: translateY(0);
 }
+
+.menu ul li ul li {
+    display: block;
+    text-align: left;
+}
+
+.menu ul li ul li a {
+    padding: 12px 20px;
+    display: block;
+    color: #333;
+    transition: background 0.3s ease-in-out, color 0.3s ease-in-out;
+    font-size: 14px;
+}
+
+.menu ul li ul li a:hover {
+    background-color: #f1f1f1;
+    color: #e63946;
+    border-left: 4px solid #e63946;
+    padding-left: 16px;
+}
+
+.menu ul li:hover > a {
+    color: #e63946;
+    text-shadow: 0px 2px 5px rgba(230, 57, 70, 0.3);
+}
+
 
 .nav-top .icons{
     position: var(--main-position);
