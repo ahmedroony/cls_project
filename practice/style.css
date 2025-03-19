@@ -6,6 +6,7 @@
 }
 :root{
     --min-width-custom :1280px; 
+    --height-header : 80px;
 }
 /* ------- */
 
@@ -13,8 +14,7 @@
 header{
     min-width: var(--min-width-custom);
     width: 100%;
-    height: 80px;
-    background-color: red;
+    height: var(--height-header);
 }
 /* ------- */
 
@@ -24,7 +24,6 @@ nav{
     margin: auto;
     width: 90%;
     height: 100%;
-    background-color: yellow;
 }
 .nav-left,
 .nav-right{
@@ -42,21 +41,86 @@ nav{
 /* ------- */
 
 /* header > nav left side > menu*/
-.nav-site-icon{
+.nav-site-icon-box{
     width: 200px;
     height: 100%;
     background-color: palevioletred;
 }
 .nav-menu-box{
-    display: inline-block;
     width: 100% ;
-    height: fit-content;
+    height: var(--height-header);
     background-color: orange;
 }
 .nav-menu-list{
+    position: relative;
     background-color: aqua;
+    height: 100%;
     & li {
         display: inline-block;
+        background-color: brown;
+        line-height: var(--height-header);
+    }
+    & li:hover {
+        background-color: wheat;
+    }
+    & li:hover .sub-menu-box{
+        visibility: visible;
     }
 }
+/* >>> sub menu box */
+.sub-menu-box{
+    visibility: hidden;
+}
+
+/* >>> home submenu  */
+.nav-home-submenu{
+    display: flex;
+    justify-content: center;
+    visibility: none;
+    position: absolute;
+    bottom: -var(--height-header);
+    width: 500px;
+    height: 300px;
+    background-color: gray;
+    & > div {
+        width: 25%;
+        height: 100%;
+        margin: 0px 10px;
+        background-color: rosybrown;
+
+    }
+}
+
+
+
+/* >>> shop submenu  */
+.nav-shop-submenu{
+    visibility: hidden;
+    position: absolute;
+    bottom: -var(--height-header);
+    width: 100px;
+    height: 100px;
+    background-color: black;
+}
+/* >>> bog submenu  */
+.nav-blog-submenu{
+    visibility: hidden;
+    position: absolute;
+    bottom: -var(--height-header);
+    width: 100px;
+    height: 100px;
+    background-color: lightcoral;
+}
+/* ------- */
+
+
+/* header > nav right side > menu*/
+/* ------- */
+
+
+/* main */
+/* ------- */
+
+
+/* main > section1*/
 /* ------- */
