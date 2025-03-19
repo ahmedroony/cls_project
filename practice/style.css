@@ -48,15 +48,12 @@ nav{
     & li{
         display: inline-block;
     }
-    & li:hover{
-        background-color: red;
-    }
     & li:hover .nav-shop-submenu{
-        height: 1000px;
+        display: block;
     }
 }
 .nav-shop-submenu{
-    display: block;
+    display: none;
     position: absolute;
     width: 200px;
     height: 200px;
