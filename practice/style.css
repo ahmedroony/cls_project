@@ -1,0 +1,65 @@
+/* header */
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+:root{
+    --min-width-custom :1280px; 
+}
+header{
+    min-width: var(--min-width-custom);
+    width: 100%;
+    height: 100px;
+    background-color: red;
+}
+/* ------- */
+
+/* header > nav */
+nav{
+    display: flex;
+    margin: auto;
+    width: 90%;
+    height: 100%;
+    background-color: yellow;
+}
+/* >>> */
+.nav-site-icon{
+    display: inline-block;
+    width: 20%;
+    height: 100%;
+    background-color: black;
+}
+/* >>> */
+.nav-list{
+    display: inline-block;
+    width: 80%;
+    height : 100% ;
+    background-color: blueviolet;
+}
+
+.nav-list__box{
+    margin-top: 30px;
+    background-color: #87ff33;
+    width: 800px;
+}
+.nav-list__menu{
+    background-color: aquamarine;
+    & li{
+        display: inline-block;
+    }
+    & li:hover{
+        background-color: red;
+    }
+    & li:hover .nav-shop-submenu{
+        height: 1000px;
+    }
+}
+.nav-shop-submenu{
+    display: block;
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    background-color: #3f5a2c;
+}
+/* ------- */
