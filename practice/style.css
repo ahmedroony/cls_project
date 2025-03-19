@@ -1,4 +1,4 @@
-/* header */
+/* Utility */
 *{
     box-sizing: border-box;
     margin: 0;
@@ -7,10 +7,13 @@
 :root{
     --min-width-custom :1280px; 
 }
+/* ------- */
+
+/* header */
 header{
     min-width: var(--min-width-custom);
     width: 100%;
-    height: 100px;
+    height: 80px;
     background-color: red;
 }
 /* ------- */
@@ -23,40 +26,37 @@ nav{
     height: 100%;
     background-color: yellow;
 }
-/* >>> */
-.nav-site-icon{
-    display: inline-block;
-    width: 20%;
+.nav-left,
+.nav-right{
+    display: flex;
     height: 100%;
-    background-color: black;
 }
-/* >>> */
-.nav-list{
-    display: inline-block;
-    width: 80%;
-    height : 100% ;
-    background-color: blueviolet;
+.nav-left{
+    width: 70%;
+    background-color: green;
 }
+.nav-right{
+    width: 30%;
+    background-color: blue;
+}
+/* ------- */
 
-.nav-list__box{
-    margin-top: 30px;
-    background-color: #87ff33;
-    width: 800px;
+/* header > nav left side > menu*/
+.nav-site-icon{
+    width: 200px;
+    height: 100%;
+    background-color: palevioletred;
 }
-.nav-list__menu{
-    background-color: aquamarine;
-    & li{
+.nav-menu-box{
+    display: inline-block;
+    width: 100% ;
+    height: fit-content;
+    background-color: orange;
+}
+.nav-menu-list{
+    background-color: aqua;
+    & li {
         display: inline-block;
     }
-    & li:hover .nav-shop-submenu{
-        display: block;
-    }
-}
-.nav-shop-submenu{
-    display: none;
-    position: absolute;
-    width: 200px;
-    height: 200px;
-    background-color: #3f5a2c;
 }
 /* ------- */
