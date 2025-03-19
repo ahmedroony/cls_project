@@ -10,36 +10,57 @@ body{
 .nav-top{
     width: 100%;
     height: 60px;
-background-color:rgb(248, 248, 245);
+background-color:#FFFAF3;
 position: fixed;
 top: 0px;
 z-index: 1000;
 box-shadow: 10px 5px 5px rgb(245, 241, 241);
 }
-.menu{
-    width: 70%;
-text-align: center;
-margin-top: 10px;
-margin-left: 190px;
+.create-menu{
+    display: flex;
+    background-color: red;
+    width: 488px;
+    height: 40; 
+    margin: auto;
+    
 }
-.menu ul li{
-position: relative;
-line-height: -5px;
-display: inline-block;
-margin: 10px;
+.the-home {
+    font-size: larger;
+    padding: 0px;
+    margin: 10px;
 }
-.menu ul li ul{
-    display: none;
-    padding: 10px;
-}
-.menu ul li:hover ul{
-    display: block;
-    background-color: white;
+.sub-menu {
+    display: none; /* إخفاء القوائم الفرعية */
+    position: absolute;
+    top: 35%;
+    background-color: aqua;
     border-radius: 5px;
+    padding: 15px;
+    margin: 10;
 }
-.menu ul li h3:hover{
-color: red;
+.drop-menu li:hover .sub-menu{
+    display: block;
 }
+.the-shop{
+    font-size: larger;
+    padding: 0px;
+    margin: 10px;
+}
+.sub-menum{
+    display: none; /* إخفاء القوائم الفرعية */
+    position: absolute;
+    top: 35%;
+    background-color: aqua;
+    border-radius: 5px;
+    padding: 15px;
+    margin: 10;
+
+}
+.the-shop .sub-menum{
+display: block;
+}
+
+
 
 .nav-top .icons{
     position: var(--main-position);
@@ -85,18 +106,20 @@ menu{
 margin: auto;    
 width: 95em;
 height: 100em;
-    background-color:#ffff;
+    background-color:#FFFAF3;
 }
 .me-nu h1{
     width: 663.06px;
     height: auto;
-display: block;
-font-weight: bolder;
-font-size: 80px;
-margin-bottom: 10px;
-padding: 10px;
-position: relative;
-top: 50px;
+    display: block;
+    font-weight: bolder;
+    font-size: 80px;
+    margin-bottom: 10px;
+    padding: 10px;
+    position: relative;
+    top: 66px;
+    left: 45px;
+
 }
 .star img{
     width: 94px;
@@ -115,19 +138,26 @@ margin-top: -35px;
 }
 .me-nu .prices {
     h6{
-position: relative;
-bottom: 250px;
-top: 40px;
-left: 50px;
+    position: relative;
+    bottom: 250px;
+    top: 100px;
+    left: 50px;
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
     }
     
  h2{
     position: relative;
     color: rgb(0, 0, 0);
-top: 90px;
-left:40px;
+    top: 155px;
+    left: 52px;
 bottom: 500px;
-
+font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
 }
 
 }
@@ -144,6 +174,7 @@ bottom: 500px;
 }
 .me-nu .the-buttons {
     button{
+        margin-top: 50px;
         border-radius: 10px;
         width: 150px;
         height: 45px;
@@ -153,6 +184,7 @@ bottom: 500px;
     .button2{
 background-color: white;
 color: var(--color);
+margin-left: 10px;
     }
 }
 .me-nu .the-buttons button{
@@ -162,17 +194,20 @@ cursor: pointer;
 float: right;
 margin-right: 20%;
 margin-bottom: 100%;
-
+}
+.me-nu .right-pinkphoto img{
+    width: 542px;
+    height: 729.61px;
 }
 .right-2photo{
     position: var(--main-position);
     right: 0px;
-    top: 50%;
+    top: 60%;
 }
 .me-nu .star-2{
 position: var(--main-position);
 right: 10%;
-top: 100px;
+top: 250px;
 bottom: 15px;
 margin-right: 50px;
 }
@@ -186,6 +221,8 @@ img{
     margin-left: 60px; 
     margin-bottom: 0px;
     display: inline;
+    bottom: 60px;
+    left: -55px;
 }
 }
 .cart{
@@ -233,16 +270,17 @@ margin-top: -10px;
 .me-nu .img-letter .img-1{
     width: 75.06px;
     height: 75.18px;
+    margin-left: 30px;
 }
 .me-nu .img-letter h6{
 position: relative;
-left: 25%;
+left: 35%;
 bottom:25%;
 top: -85px;
 }
 .me-nu .img-letter h4{
     position: relative;
-left: 25%;
+left: 34%;
 bottom:25%;
 top: -65px;
     font-family: "Inter", sans-serif;
@@ -305,28 +343,32 @@ left: 60%;
 }
 
 
- .me-nu .collge-left .img-2{
+.me-nu .collge-left .img-2{
 
 position: var(--main-position);
 left: 20%;
-    }
- .me-nu .collge-left .img-3{
+}
+.me-nu .collge-left .img-3{
 
 position: var(--main-position);
 left: 40%;
     }
- .me-nu .collge-left .img-4{
+.me-nu .collge-left .img-4{
 
-position: var;
-left: 55%;
-bottom: 25%;
-top: 15%;
-    }
- .me-nu .collge-left .black-border{
-position: var;
-left: 92%;
-bottom: -20%;
-top: 30%;
+    position: var;
+    left: 55%;
+    bottom: 25%;
+    top: 15%;
+}
+.me-nu .collge-left .black-border{
+    position: var;
+    left: 92%;
+    bottom: -20%;
+    top: 30%;
+}
+.collge-left img:nth-child(1)
+{
+    margin-top: -65px;
 }
 
 .collge-right{
@@ -338,12 +380,25 @@ top: 30%;
     bottom: 31%;
     margin-bottom: 50px;
 }
+.collge-right img:nth-child(2)
+{
+    position: absolute;
+    bottom: 0px;
+    margin-left: 20%;
+    margin-bottom: 12%;
+}
+.collge-right .cross-heir
+{
+    position: absolute;
+left: 25%;
+top: 340px;
+}
 .collge-right .border-white{
-position: var(--main-position);
-top: 28%;
-left: 0%;
-bottom: 25%;
-position: var(--main-position);
+    position: var(--main-position);
+    top: 28%;
+    left: 0%;
+    bottom: 25%;
+    position: var(--main-position);
 }
 .collge-right p{
     color: rgb(255, 255, 255);
@@ -354,17 +409,17 @@ position: var(--main-position);
     position: relative;
     font-size: xx-large;
     left: 20%;
-    top: 35%;
+    top: 30%;
 }
 .collge-right h6{
-color: lightgray;
-font-family: "DM Sans", sans-serif;
-font-optical-sizing: auto;
-font-weight: weight;
-font-style: normal;
-position: relative;
-left: 21%;
- top: 37%;
+    color: lightgray;
+    font-family: "DM Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    position: relative;
+    left: 21%;
+    top: 32%;
 }
 .new-info{
     position: relative;
@@ -380,7 +435,7 @@ left: 21%;
     left: 10%;
     top: 10%;
 }
-   .new-info h4{
+.new-info h4{
     position: var(--main-position);
     left: 53%;
     top: 15%;
@@ -389,21 +444,21 @@ left: 21%;
     font-weight: weight;
     font-style: normal;
     font-size: xx-large;
-   }
-   .new-info img:last-child{
+}
+.new-info img:last-child{
     position: var(--main-position);
     left: 85%;
     top: 15%;
-   }
+}
 .new-info h5{
     font-family: "DM Sans", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: weight;
-  font-style: normal;
-  position: var(--main-position);
-  left: 53%;
-  top: 30%;
-  right: 10%;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    position: var(--main-position);
+    left: 53%;
+    top: 30%;
+    right: 10%;
 }
 .new-info .img--6{
     position: var(--main-position);
@@ -418,21 +473,136 @@ left: 21%;
     right: 65%;
 }
 .new-info marquee{
-    
+    position: relative;
     font-family: "Inter", sans-serif;
     font-optical-sizing: auto;
     font-weight: weight;
     font-style: normal;
-margin-left: 10px;
-margin-bottom: auto;
-letter-spacing: 10px;
+    margin-bottom: auto;
+    letter-spacing: 15px;
+    bottom: 20%;
+    top: -150px;
 }
 .new-info marquee hr{
     width: 100%;
-color: black;
-margin-top: 10px;
+    color: black;
+    margin-top: 10px;
+    background-color: black;
+}
+.Most-popular-products{
+    width: 90%;
+    height: 1040px;
+    background-color: #483b27;
+    margin: auto;
+    position: relative;
+}
+.Most-popular-products h5:first-child{
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    position: absolute;
+    font-size: 35px;
+    left: 5%;
+    top: 10px;
+    max-width: 376px;
+    max-height: 42px;
+}
+.Most-popular-products .filters ul{
+    font-family: "DM Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    display: inline;
+    float: right;
+    padding: 5px;
+    margin: 5px;
+}
+.Most-popular-products .filters ul li ul{
+    border-radius: 10px;
+    color: black;
+    border: 2px solid black;
+}
+.Most-popular-products .filters ul li ul:hover{
+    border-radius: 10px;
+    color: white;
 background-color: black;
+cursor: pointer;
+}
+.Most-popular-products .filters ul li ul::selection{
+    color: yellow;
 
+}
+.Most-popular-products .shop-meta{
+position: relative;
+}
+
+.Most-popular-products .shop-meta  img:first-child{
+    position: absolute;
+    margin-top: 95px;  
+    right: 75px;
+    left: 3%;
+    
+}
+.Most-popular-products .shop-meta  img:nth-child(2){
+    position: absolute;
+    margin-top: 95px;  
+    right: 33px;
+    left: 27%;
+    
+}
+.Most-popular-products .shop-meta img:nth-child(3){
+    position: absolute;
+    margin-top: 95px;  
+    right: 50px;
+    left: 51%;
+}
+.Most-popular-products .shop-meta img:nth-child(4){
+    position: absolute;
+    margin-top: 95px;  
+    right: 50px;
+    left: 75%;
+    z-index: 15;
+}
+.Most-popular-products .shop-meta img:nth-child(5){
+position: absolute;
+left: 38px;
+bottom: 20%;
+top: 550px;
+}
+.Most-popular-products .shop-meta img:nth-child(6){
+position: absolute;
+left: 27%;
+bottom: 20%;
+top: 550px;
+}
+.Most-popular-products .shop-meta img:nth-child(7){
+position: absolute;
+left: 51%;
+bottom: 20%;
+top: 550px;
+}
+.Most-popular-products .shop-meta img:nth-child(8){
+position: absolute;
+left: 75%;
+bottom: 20%;
+top: 550px;
+}
+
+
+
+.Most-popular-products .small-icons{
+    position: absolute;
+    right: 50%;
+    top: 11%;
+    left: 9%;
+    margin-top: -10px;
+}
+.Most-popular-products .small-icons  img:first-child{
+    position: absolute;
+    left: 85%;
+    bottom: 50%;
+    top: 55px;
 }
 
 
